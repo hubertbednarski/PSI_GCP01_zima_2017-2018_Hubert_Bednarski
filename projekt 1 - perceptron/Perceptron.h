@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-#define LEARNING_RATE    0.9
+#define LEARNING_RATE    0.2
 #define MAX_ITERATION    16
 
 using namespace std;

@@ -7,17 +7,17 @@ double Perceptron::losuj_punkty() {
 	srand(time(NULL));
 	for (int i = 0; i < liczba_testow; ++i) {
 		if (i % 2 == 0) {
-			x[i] = (rand() % (50 - -0) + 1);
+			x[i] = (rand() % (35 - -15) + 1) - 15;
 			x[i] /= 10;
-			y[i] = (rand() % (50 - 0) + 1);// (rand() % (max-min)+1)+min
+			y[i] = (rand() % (35 - -15) + 1) - 15;// (rand() % (max-min)+1)+min
 			y[i] /= 10;
 			wynik[i] = 0;
 			cout << x[i] << "\t" << y[i] << "\t" << wynik[i] << endl;
 		}
 		else {
-			x[i] = (rand() % (100 - 50) + 1) + 50;
+			x[i] = (rand() % (90 - 40) + 1) + 40;
 			x[i] /= 10;
-			y[i] = (rand() % (100 - 50) + 1) + 50;
+			y[i] = (rand() % (90 - 40) + 1) + 40;
 			y[i] /= 10;
 			wynik[i] = 1;
 			cout << x[i] << "\t" << y[i] << "\t" << wynik[i] << endl;
